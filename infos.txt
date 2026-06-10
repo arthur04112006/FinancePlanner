@@ -1,0 +1,807 @@
+Crie um frontend completo de alta fidelidade (high-fidelity) para um aplicativo financeiro pessoal focado em motociclistas.
+
+IMPORTANTE:
+
+- NÃO implementar backend.
+- NÃO implementar autenticação real.
+- NÃO implementar APIs.
+- NÃO implementar Supabase.
+- NÃO implementar Firebase.
+- Utilizar apenas dados mockados.
+- O objetivo é criar uma experiência visual extremamente próxima de um aplicativo pronto para produção.
+
+Tecnologias:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Lucide Icons
+- Recharts para gráficos
+
+Design:
+
+- Mobile First
+- Inspirado em Nubank, Inter, C6 e aplicativos modernos
+- Dark Mode por padrão
+- Visual premium
+- Fundo preto grafite (#0F1117)
+- Cards em cinza escuro
+- Cor principal: Roxo (#7C3AED)
+- Cor secundária: Azul (#3B82F6)
+- Verde para valores positivos
+- Vermelho para despesas
+- Cantos arredondados (20px)
+- Sombras suaves
+- Ícones minimalistas
+- Animações suaves
+- Layout pensado inicialmente para telas de celular
+
+Criar visualização responsiva de smartphone centralizado na tela.
+
+Nome do aplicativo:
+
+MotoLife
+
+Conceito:
+
+Aplicativo de gestão financeira pessoal integrado ao planejamento financeiro de motociclistas.
+
+O usuário deve conseguir controlar:
+
+- Salário
+- Renda extra
+- Contas fixas
+- Alimentação
+- Mercado
+- Internet
+- Energia
+- Água
+- Condomínio
+- Streaming
+- Assinaturas
+- Saúde
+- Estudos
+- Lazer
+- Combustível
+- Manutenção da moto
+- Objetivos financeiros
+
+O aplicativo NÃO é apenas sobre motos.
+
+A moto é uma categoria importante dentro da vida financeira do usuário.
+
+----------------------------------
+
+CRIAR AS SEGUINTES TELAS
+
+----------------------------------
+SEÇÃO 1
+
+VISÃO GERAL DO MÊS
+
+Exibir:
+
+Saldo disponível
+
+Receitas do mês
+
+Despesas do mês
+
+Valor economizado
+
+Projeção de saldo final
+
+Exemplo:
+
+Saldo disponível:
+R$ 487,50
+
+Projeção para o fim do mês:
+R$ 712,00
+
+----------------------------------
+
+SEÇÃO 2
+
+LIBERDADE FINANCEIRA
+
+Converter dinheiro em situações reais.
+
+Exemplo:
+
+Com seu dinheiro disponível você ainda pode:
+
+🏍️ Rodar 1432 km
+
+⛽ Encher 3 tanques
+
+🍔 Fazer 24 refeições fora
+
+🎬 Ir ao cinema 8 vezes
+
+☕ Comprar 60 cafés
+
+Mostrar em formato de cards.
+
+----------------------------------
+
+SEÇÃO 3
+
+LIMITE DIÁRIO
+
+Mostrar:
+
+Quanto o usuário pode gastar por dia até o final do mês.
+
+Exemplo:
+
+R$ 18,40 por dia
+
+Criar indicador visual.
+
+Mostrar:
+
+Dias restantes no mês
+
+Saldo restante
+
+----------------------------------
+
+SEÇÃO 4
+
+CONTAS A PAGAR
+
+Exibir próximos vencimentos.
+
+Exemplo:
+
+Luz
+R$ 120
+
+Internet
+R$ 99
+
+Condomínio
+R$ 350
+
+Seguro da moto
+R$ 120
+
+Mostrar status:
+
+Pago
+Próximo
+Atrasado
+
+----------------------------------
+
+SEÇÃO 5
+
+MOTO
+
+Resumo rápido.
+
+Mostrar:
+
+Autonomia atual
+
+Km disponíveis este mês
+
+Próxima manutenção
+
+Próximo abastecimento
+
+Exemplo:
+
+Autonomia:
+465 km
+
+Próximo abastecimento:
+em 320 km
+
+Troca de óleo:
+em 720 km
+
+----------------------------------
+
+SEÇÃO 6
+
+OBJETIVOS
+
+Mostrar metas mais importantes.
+
+Exemplo:
+
+🪖 Capacete
+
+48%
+
+🧥 Jaqueta
+
+27%
+
+💰 Reserva de emergência
+
+61%
+
+----------------------------------
+
+SEÇÃO 7
+
+ASSISTENTE FINANCEIRO
+
+Cards inteligentes.
+
+Exemplos:
+
+Você gastou menos combustível este mês.
+
+Seu gasto com alimentação aumentou 12%.
+
+Você pode economizar mais R$ 180 este mês.
+
+Mantendo este ritmo você atingirá sua meta 2 meses antes.
+
+----------------------------------
+
+SEÇÃO 8
+
+PREVISÃO DE SOBREVIVÊNCIA FINANCEIRA
+
+Mostrar:
+
+Seu dinheiro atual é suficiente para:
+
+12 dias
+
+ou
+
+até o próximo salário
+
+Criar visual elegante.
+
+----------------------------------
+
+SEÇÃO 9
+
+ORÇAMENTO RESTANTE
+
+Exibir quanto ainda resta por categoria.
+
+Exemplo:
+
+Mercado:
+R$ 220 restantes
+
+Alimentação:
+R$ 150 restantes
+
+Moto:
+R$ 280 restantes
+
+Lazer:
+R$ 90 restantes
+
+----------------------------------
+
+SEÇÃO 10
+
+RESUMO EXECUTIVO
+
+Gerar um resumo textual automático.
+
+Exemplo:
+
+"Seu mês está saudável.
+Você está dentro do orçamento.
+Pode rodar aproximadamente mais 1432 km,
+economizar R$ 210 e atingir a meta do capacete em 5 meses."
+
+Este card deve ficar no final da tela.
+
+----------------------------------
+
+REQUISITO DE UX
+
+A tela Meu Mês deve ser a primeira tela exibida ao abrir o aplicativo.
+
+Ela deve funcionar como um cockpit financeiro.
+
+O usuário deve conseguir entender sua situação financeira completa em menos de 10 segundos.
+
+
+
+1) HOME
+
+Cartão principal:
+
+Saldo disponível
+
+Exemplo:
+
+R$ 487,50
+
+Barra de progresso do orçamento.
+
+Mostrar:
+
+Receitas
+Despesas
+Economizado
+
+----------------------------------
+
+Seção:
+
+Liberdade do Mês
+
+Exibir:
+
+1432 km disponíveis
+
+11 rolês médios
+
+5 viagens longas
+
+24 refeições fora
+
+Tudo como cards visuais.
+
+----------------------------------
+
+Cards rápidos:
+
+Combustível
+Manutenção
+Alimentação
+Mercado
+
+----------------------------------
+
+Card:
+
+Próxima manutenção
+
+Exemplo:
+
+Troca de óleo em 720 km
+
+Barra de progresso.
+
+----------------------------------
+
+Card:
+
+Insights rápidos
+
+Exemplos:
+
+"Você pode rodar mais 480 km se mantiver seus gastos atuais."
+
+"Se reduzir R$ 4 por dia em alimentação, ganhará mais 580 km de rodagem."
+
+----------------------------------
+
+2) FINANÇAS
+
+Resumo financeiro:
+
+Receitas
+Despesas
+Economizado
+
+----------------------------------
+
+Gráfico de categorias
+
+Categorias:
+
+Moradia
+Mercado
+Alimentação
+Moto
+Lazer
+Saúde
+Estudos
+Assinaturas
+Outros
+
+Utilizar gráfico donut.
+
+----------------------------------
+
+Seção:
+
+Despesas Fixas Mensais
+
+Itens:
+
+Luz
+Água
+Internet
+Condomínio
+Mercado
+Seguro
+Academia
+Streaming
+
+Mostrar:
+
+Valor
+Data de vencimento
+
+----------------------------------
+
+Lista de transações recentes
+
+Com ícones e categorias.
+
+----------------------------------
+
+3) PLANEJAMENTO MENSAL
+
+Tela extremamente importante.
+
+Mostrar:
+
+Orçamento do mês.
+
+Distribuição sugerida:
+
+Moradia
+Mercado
+Alimentação
+Moto
+Lazer
+Reserva
+Objetivos
+
+Mostrar barras visuais.
+
+----------------------------------
+
+Card:
+
+Limite diário
+
+Exemplo:
+
+Você pode gastar R$ 18,40 por dia até o final do mês.
+
+----------------------------------
+
+Card:
+
+Previsão de fechamento
+
+Exemplo:
+
+Mantendo o ritmo atual:
+
+Saldo previsto:
+R$ 712
+
+----------------------------------
+
+4) MOTO
+
+Cadastro visual da moto.
+
+Mostrar:
+
+Modelo
+
+Ano
+
+Consumo médio
+
+Capacidade do tanque
+
+Preço atual do combustível
+
+----------------------------------
+
+Indicadores:
+
+Consumo médio real
+
+Custo por km
+
+Custo real por km
+
+Autonomia com tanque cheio
+
+----------------------------------
+
+Card:
+
+Próximo abastecimento
+
+Exemplo:
+
+Em média 320 km
+
+----------------------------------
+
+5) ABASTECIMENTOS
+
+Lista histórica.
+
+Cada abastecimento deve conter:
+
+Data
+Posto
+Litros
+Valor pago
+Quilometragem
+
+----------------------------------
+
+Indicadores no topo:
+
+Consumo médio
+
+Preço médio do litro
+
+Gasto mensal com combustível
+
+----------------------------------
+
+Botão:
+
+Novo abastecimento
+
+Abrir modal visual.
+
+----------------------------------
+
+6) PREVISOR DE TANQUES
+
+Funcionalidade visual.
+
+Usuário informa:
+
+Valor disponível
+
+Exemplo:
+
+R$ 200
+
+Resultado:
+
+Quantos tanques consegue encher
+
+Exemplo:
+
+2,58 tanques
+
+----------------------------------
+
+Mostrar também:
+
+Km possíveis
+
+Exemplo:
+
+1200 km
+
+----------------------------------
+
+Mostrar visualmente:
+
+Ícones de tanques preenchidos.
+
+----------------------------------
+
+7) DIÁRIO DE ROLÊS
+
+Mostrar:
+
+Total de km rodados
+
+Quantidade de rolês
+
+Cidades visitadas
+
+----------------------------------
+
+Lista:
+
+Destino
+Data
+Distância
+Custo
+
+----------------------------------
+
+8) CALENDÁRIO FINANCEIRO
+
+Calendário mensal.
+
+Eventos:
+
+Conta de luz
+
+Água
+
+Internet
+
+Condomínio
+
+Seguro da moto
+
+Troca de óleo
+
+Parcelas
+
+Objetivos
+
+----------------------------------
+
+Mostrar eventos coloridos.
+
+----------------------------------
+
+9) OBJETIVOS
+
+Lista de metas.
+
+Exemplos:
+
+Capacete novo
+
+Viagem para Foz
+
+Reserva de emergência
+
+Notebook
+
+----------------------------------
+
+Cada objetivo deve conter:
+
+Valor atual
+
+Meta final
+
+Percentual
+
+Tempo restante
+
+Barra de progresso
+
+----------------------------------
+
+10) INSIGHTS
+
+Tela dedicada.
+
+Cards inteligentes.
+
+Exemplos:
+
+Você gastou 12% menos combustível.
+
+Seu gasto com mercado aumentou 8%.
+
+Você pode antecipar a compra do capacete em 2 meses.
+
+Seu potencial de economia este mês é R$ 210.
+
+Transformar dinheiro em benefícios reais.
+
+Exemplo:
+
+R$ 100 economizados =
+480 km de rodagem.
+
+----------------------------------
+
+11) CONQUISTAS
+
+Sistema gamificado.
+
+Exemplos:
+
+1000 km rodados
+
+Primeira meta concluída
+
+30 dias sem ultrapassar orçamento
+
+Reserva criada
+
+Primeiro mês economizando
+
+----------------------------------
+
+Criar visual semelhante a badges de jogos.
+
+----------------------------------
+
+NAVEGAÇÃO
+
+Bottom Navigation fixa.
+
+Itens:
+
+Home
+Finanças
+Moto
+Objetivos
+Mais
+
+----------------------------------
+
+MENU MAIS
+
+Agrupar:
+
+Planejamento Mensal
+Abastecimentos
+Previsor de Tanques
+Diário de Rolês
+Calendário
+Insights
+Conquistas
+Configurações
+
+----------------------------------
+
+CONFIGURAÇÕES
+
+Tema
+
+Moeda
+
+Meta de economia
+
+Dados da moto
+
+Preço padrão do combustível
+
+Exportação de dados
+
+----------------------------------
+
+QUALIDADE
+
+Gerar código limpo.
+
+Componentizar tudo.
+
+Criar design system reutilizável.
+
+Criar estrutura de pastas profissional.
+
+Criar estados mockados realistas.
+
+Nenhuma tela pode parecer protótipo simples.
+
+O resultado deve parecer um aplicativo pronto para ser publicado na Play Store.
+
+----------------------------------
+
+12) MEU MÊS (TELA PRINCIPAL PREMIUM)
+
+Esta deve ser a tela mais importante do aplicativo.
+
+Objetivo:
+
+Transformar números financeiros em decisões reais do dia a dia.
+
+O usuário deve conseguir abrir esta tela e entender imediatamente:
+
+- Quanto dinheiro possui
+- Quanto pode gastar
+- Quanto pode rodar de moto
+- Quantos tanques consegue encher
+- Quanto sobra para objetivos
+- Quanto sobra após todas as contas
+
+A tela deve parecer um painel financeiro pessoal inteligente.
+
+----------------------------------
+
