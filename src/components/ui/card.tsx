@@ -5,16 +5,31 @@ type CardProps = React.HTMLAttributes<HTMLDivElement> & {
 };
 
 export function Card({ className, accent = "none", ...props }: CardProps) {
+  const interactiveProps = props.onClick
+    ? {
+        role: "button",
+        tabIndex: 0,
+        onKeyDown: (event: React.KeyboardEvent<HTMLDivElement>) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            props.onClick?.(event as unknown as React.MouseEvent<HTMLDivElement>);
+          }
+        },
+      }
+    : {};
+
   return (
     <div
       className={cn(
         "premium-card rounded-app border border-white/8 bg-panel/92 p-4 shadow-soft backdrop-blur",
+        props.onClick && "cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet/45",
         accent === "violet" && "ring-1 ring-violet/25",
         accent === "blue" && "ring-1 ring-electric/25",
         accent === "green" && "ring-1 ring-success/25",
         accent === "red" && "ring-1 ring-danger/25",
         className,
       )}
+      {...interactiveProps}
       {...props}
     />
   );

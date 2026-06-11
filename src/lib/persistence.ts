@@ -139,6 +139,7 @@ export async function loadCloudData(): Promise<AppData> {
       id: item.id,
       title: item.title,
       eventDate: item.event_date,
+      eventTime: item.event_time ?? undefined,
       eventType: item.event_type,
       color: item.color,
     })),

@@ -58,11 +58,11 @@ export const seedData: AppData = {
     { id: "ride-antonina", destination: "Antonina", rideDate: "2026-05-12", distanceKm: 205, cost: 39, city: "Antonina" },
   ],
   calendarEvents: [
-    { id: "event-seguro", title: "Seguro da moto", eventDate: "2026-06-07", eventType: "Conta", color: "#EF4444" },
-    { id: "event-luz", title: "Luz", eventDate: "2026-06-12", eventType: "Conta", color: "#F59E0B" },
-    { id: "event-internet", title: "Internet", eventDate: "2026-06-15", eventType: "Conta", color: "#3B82F6" },
-    { id: "event-condominio", title: "Condominio", eventDate: "2026-06-18", eventType: "Conta", color: "#7C3AED" },
-    { id: "event-oleo", title: "Troca de oleo", eventDate: "2026-06-24", eventType: "Moto", color: "#22C55E" },
+    { id: "event-seguro", title: "Seguro da moto", eventDate: "2026-06-07", eventTime: "09:00", eventType: "Conta", color: "#EF4444" },
+    { id: "event-luz", title: "Luz", eventDate: "2026-06-12", eventTime: "10:00", eventType: "Conta", color: "#F59E0B" },
+    { id: "event-internet", title: "Internet", eventDate: "2026-06-15", eventTime: "08:30", eventType: "Conta", color: "#3B82F6" },
+    { id: "event-condominio", title: "Condominio", eventDate: "2026-06-18", eventTime: "12:00", eventType: "Conta", color: "#7C3AED" },
+    { id: "event-oleo", title: "Troca de oleo", eventDate: "2026-06-24", eventTime: "16:30", eventType: "Moto", color: "#22C55E" },
   ],
   achievements: [
     { id: "ach-km", title: "1000 km rodados", description: "Voce registrou mais de 1000 km.", completed: true },

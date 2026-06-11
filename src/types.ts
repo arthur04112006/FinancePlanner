@@ -76,6 +76,7 @@ export type CalendarEvent = {
   id: string;
   title: string;
   eventDate: string;
+  eventTime?: string;
   eventType: string;
   color: string;
 };
